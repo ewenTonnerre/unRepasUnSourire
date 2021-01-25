@@ -1,0 +1,297 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding-right: 15px;
+}
+.navbar .navbar-brand {
+  color: #aa0a0a;
+  margin-left: 20px;
+  font-size: 1.5em;
+}
+.navbar .nav-item {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#accueil {
+  min-height: 100vh;
+  background: url("images/fondAccueil.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: 40px;
+}
+#accueil p {
+  max-width: 900px;
+  margin: 50px;
+}
+
+#situation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #302f2f;
+  color: white;
+  padding: 55px;
+}
+#situation #presentationSituation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 30px;
+  flex-wrap: wrap;
+}
+#situation #presentationSituation p {
+  width: 320px;
+  height: 320px;
+  min-width: 320px;
+  min-height: 320px;
+  font-size: large;
+  margin: 50px;
+  color: black;
+  padding: 3%;
+}
+#situation #presentationSituation #postItSituationBlue {
+  background-color: #165888;
+}
+#situation #presentationSituation2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 30px;
+  flex-wrap: wrap-reverse;
+}
+#situation #presentationSituation2 p {
+  width: 320px;
+  height: 320px;
+  min-width: 320px;
+  min-height: 320px;
+  font-size: large;
+  margin: 50px;
+  color: black;
+  padding: 3%;
+}
+#situation #presentationSituation2 #postItSituationOrange {
+  background-color: #DD3C34;
+}
+
+#actions {
+  padding: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#actions p {
+  max-width: 900px;
+  font-size: larger;
+}
+#actions table {
+  max-width: 800px;
+  margin: 30px;
+}
+#actions #enCooperation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#presentation {
+  padding: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#presentation #personneImpair {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#presentation #personneImpair #infoPersonne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#presentation #personneImpair #pdp {
+  border-radius: 50%;
+}
+#presentation #personneImpair p {
+  max-width: 900px;
+  min-width: 400px;
+  margin: 25px;
+  font-size: larger;
+}
+#presentation #personnePair {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+#presentation #personnePair #infoPersonne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#presentation #personnePair #pdp {
+  border-radius: 50%;
+}
+#presentation #personnePair p {
+  max-width: 900px;
+  min-width: 400px;
+  margin: 25px;
+  font-size: larger;
+}
+
+#nousSoutenir {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#nousSoutenir p {
+  text-align: center;
+  font-size: larger;
+  padding: 30px;
+}
+#nousSoutenir .btn-soutenir {
+  width: 190px;
+  height: 50px;
+  font-size: 1.3em;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+  flex-wrap: wrap;
+  text-align: center;
+}
+footer .list-group-item-dark {
+  background-color: #343a40;
+  color: white;
+  width: 250px;
+}
+footer #iconeReseaux .icone {
+  margin: 15px;
+}
+footer #iconeReseaux a:hover .icone {
+  opacity: 0.6;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: orange;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1290px) {
+  #actions h2 {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 1277px) {
+  #presentation {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #actions h2 {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #accueil {
+    padding-top: 40px;
+  }
+  #accueil h1 {
+    font-size: 2em;
+  }
+
+  #actions h2 {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 900px) {
+  #actions p {
+    font-size: 1em;
+  }
+  #actions h2 {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  footer {
+    flex-direction: column;
+  }
+  footer #realisationProjet {
+    margin: 25px;
+  }
+  footer #realisationProjet .list-group-item-dark {
+    background-color: #343a40;
+    color: white;
+    width: 250px;
+    margin: auto;
+  }
+  footer #reseauxSociaux {
+    margin: 25px;
+  }
+  footer #realisationSite {
+    margin: 25px;
+  }
+
+  #nousSoutenir p {
+    font-size: large;
+  }
+}
+@media screen and (max-width: 650px) {
+  #accueil {
+    text-align: center;
+  }
+  #accueil h1 {
+    font-size: 1.6em;
+  }
+
+  #nousSoutenir p {
+    font-size: medium;
+    width: 110%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #accueil h1 {
+    font-size: 1.4em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
