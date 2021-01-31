@@ -12,13 +12,16 @@ html, body {
   padding-right: 15px;
 }
 .navbar .navbar-brand {
-  color: #aa0a0a;
+  color: #DD3C34;
   margin-left: 20px;
   font-size: 1.5em;
 }
 .navbar .nav-item {
   margin-left: 15px;
   margin-right: 15px;
+}
+.navbar #actif {
+  color: white;
 }
 
 #accueil {
@@ -90,6 +93,71 @@ html, body {
 }
 #situation #presentationSituation2 #postItSituationOrange {
   background-color: #DD3C34;
+}
+
+.boutonMaraude {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -22px;
+}
+.boutonMaraude .voirMaraude {
+  background-color: #165888;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "BenchNine", Arial, sans-serif;
+  font-size: 1em;
+  font-size: 22px;
+  line-height: 1em;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  margin: auto;
+}
+.boutonMaraude .voirMaraude:before,
+.boutonMaraude .voirMaraude:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.boutonMaraude .voirMaraude:before {
+  border-color: white;
+  border-left-width: 3px;
+  border-top-width: 3px;
+  left: -5px;
+  top: -5px;
+}
+.boutonMaraude .voirMaraude:after {
+  border-bottom-width: 3px;
+  border-color: #302f2f;
+  border-right-width: 3px;
+  bottom: -5px;
+  right: -5px;
+}
+.boutonMaraude .voirMaraude:hover,
+.boutonMaraude .voirMaraude.hover {
+  background-color: #DD3C34;
+  color: white;
+  text-decoration: none;
+}
+.boutonMaraude .voirMaraude:hover:before,
+.boutonMaraude .voirMaraude.hover:before,
+.boutonMaraude .voirMaraude:hover:after,
+.boutonMaraude .voirMaraude.hover:after {
+  height: 100%;
+  width: 100%;
 }
 
 #actions {
@@ -182,6 +250,71 @@ html, body {
   width: 190px;
   height: 50px;
   font-size: 1.3em;
+}
+
+#accueilMaraude {
+  min-height: 100vh;
+  background: url("images/imageFondMaraude.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: 40px;
+}
+#accueilMaraude h1 {
+  background-color: #165888;
+  padding: 10px 20px 10px 20px;
+  color: #DD3C34;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+
+#contenuMaraude {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #302f2f;
+  color: white;
+  padding-top: 40px;
+}
+#contenuMaraude p {
+  max-width: 900px;
+  margin: 40px;
+}
+#contenuMaraude #imgTextMaraude {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#contenuMaraude #imgTextMaraude p {
+  max-width: 600px;
+  min-width: 450px;
+  margin: 20px;
+}
+#contenuMaraude #imgTextMaraude img {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+#contenuMaraude #ressentiMaraude {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contenuMaraude #ressentiMaraude p {
+  max-width: 600px;
+}
+#contenuMaraude #ressentiMaraude a {
+  color: white;
+  text-decoration: underline;
+}
+#contenuMaraude #ressentiMaraude a:hover {
+  color: #DD3C34;
 }
 
 footer {
