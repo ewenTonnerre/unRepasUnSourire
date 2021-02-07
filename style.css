@@ -298,8 +298,8 @@ html, body {
 }
 #contenuMaraude #imgTextMaraude p {
   max-width: 500px;
-  min-width: 450px;
-  margin: 20px;
+  min-width: 380px;
+  margin: 35px;
 }
 #contenuMaraude #imgTextMaraude img {
   border: 1px solid white;
