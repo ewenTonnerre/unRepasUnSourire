@@ -5,7 +5,7 @@ html, body{
     overflow-x:hidden;
 }
 
-.navbar{
+#navbar{
     position:fixed;
     width:100%;
     z-index:2;
@@ -313,6 +313,10 @@ html, body{
     color:white;
     padding-top:40px;
 
+    h1{
+        margin:30px;
+    }
+
     p{
         max-width: 900px;
         margin:40px;
@@ -322,15 +326,27 @@ html, body{
         display:flex;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
 
         p{
-            max-width: 600px;
+            max-width: 500px;
             min-width: 450px;
             margin:20px;
         }
         img{
             border: 1px solid white;
             border-radius: 10px;
+        }
+
+        #imgTextMaraudeImgs{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            img{
+                margin:15px;
+            }
         }
     }
 

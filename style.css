@@ -5,22 +5,22 @@ html, body {
   overflow-x: hidden;
 }
 
-.navbar {
+#navbar {
   position: fixed;
   width: 100%;
   z-index: 2;
   padding-right: 15px;
 }
-.navbar .navbar-brand {
+#navbar .navbar-brand {
   color: #DD3C34;
   margin-left: 20px;
   font-size: 1.5em;
 }
-.navbar .nav-item {
+#navbar .nav-item {
   margin-left: 15px;
   margin-right: 15px;
 }
-.navbar #actif {
+#navbar #actif {
   color: white;
 }
 
@@ -283,6 +283,9 @@ html, body {
   color: white;
   padding-top: 40px;
 }
+#contenuMaraude h1 {
+  margin: 30px;
+}
 #contenuMaraude p {
   max-width: 900px;
   margin: 40px;
@@ -291,15 +294,25 @@ html, body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 #contenuMaraude #imgTextMaraude p {
-  max-width: 600px;
+  max-width: 500px;
   min-width: 450px;
   margin: 20px;
 }
 #contenuMaraude #imgTextMaraude img {
   border: 1px solid white;
   border-radius: 10px;
+}
+#contenuMaraude #imgTextMaraude #imgTextMaraudeImgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#contenuMaraude #imgTextMaraude #imgTextMaraudeImgs img {
+  margin: 15px;
 }
 #contenuMaraude #ressentiMaraude {
   display: flex;
