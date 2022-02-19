@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Un repas Un sourire</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0"> 
@@ -32,9 +33,9 @@
           </div>
     </nav>
     <div id="accueil">
-        <img src="images/logo.png" id="logo" alt="logoUnRepasUnSourire"/>
-        <h1>Bienvenue sur le site de 1 repas 1 sourire!</h1>
-        <p>
+        <img src="images/logo.png" id="logo" alt="logoUnRepasUnSourire" class="reveal-top"/>
+        <h1 class="reveal-left">Bienvenue sur le site de 1 repas 1 sourire!</h1>
+        <p class="reveal-right">
             Projet associatif lancé par 4 étudiants de l’IUT de Sceaux. 
             Nous nous sommes rassemblés autour d’une même idée : soutenir et rassembler ! <br> <br>
             Notre principal objectif est de venir en aide aux personnes en situation de précarité. 
@@ -44,19 +45,19 @@
         </p>
     </div>
     <div id="situation">
-        <h1>La situation actuelle</h1>
+        <h1 class="reveal-top">La situation actuelle</h1>
         <div id="presentationSituation">
-            <p id="postItSituationBlue" class="shadow">
+            <p id="postItSituationBlue" class="shadow reveal-left">
                 Aujourd’hui, en France, on estime le nombre de sans-abris à environ 300 000, 
                 contre 145 000 en 2012, soit un chiffre qui a doublé en moins de 10 ans.
                 La moitié de ce chiffre représente des personnes se trouvant en Île de France, 
                 il est donc impératif de leur venir en aide !
             </p>
-            <img src="images/situationSDF1.jpg" class="img-fluid" alt="image situation sdf">
+            <img src="images/situationSDF1.jpg" class="img-fluid reveal-right" alt="image situation sdf">
         </div>
         <div id="presentationSituation2">
-            <img src="images/situationSDF2.jpg" class="img-fluid" alt="image situation sdf">
-            <p id="postItSituationOrange" class="shadow">
+            <img src="images/situationSDF2.jpg" class="img-fluid reveal-left" alt="image situation sdf">
+            <p id="postItSituationOrange" class="shadow reveal-right">
                 C’est un chiffre que l’on a du mal à imaginer et dont on ne se rend pas forcément compte. 
                 La précarité ne touche pas seulement les sans-emploi. En effet, les étudiants, 
                 les retraités et les salariés peuvent également connaître des difficultés.
@@ -65,13 +66,13 @@
     </div>
     <div class="boutonMaraude"><a href="maraude.html" class="voirMaraude">Voir les Maraudes</a></div>
     <div id="actions">
-        <h1>Nos actions</h1>
-        <p>
-            Nous avons pour objectif de récolter au minimum 1500€ afin de financer ce projet.
+        <h1 class="reveal-top">Nos actions</h1>
+        <p class="reveal-bottom">
+            Nous avons pour objectif de récolter au minimum 900€ afin de financer ce projet.
             Le financement aura pour seul et unique but l’achat de denrées alimentaires et 
             d’accessoires afin de pouvoir distribuer des repas de qualité et convenant à tous :
         </p>
-        <table class="table table-hover">
+        <table class="table table-hover reveal-bottom">
             <tr>
                 <td>Plat</td>
                 <td>Pâtes bolognaise faîtes maison (Viande halal, coulis tomate, carottes, oignons)</td>
@@ -89,10 +90,10 @@
                 <td>Couverts, gobelets et barquettes</td>
             </tr>
         </table>
-        <p>
+        <p class="reveal-left">
             Les fonds serviront également à l'achat de vêtements et de produits hygièniques.
         </p>
-        <p>
+        <p class="reveal-right">
             Chaque don à son importance, avec 2€, vous nous donnez la possibilité d’acheter 1kg de pâtes.
         </p>
         <div id="enCooperation">
@@ -107,73 +108,83 @@
     <div id="presentation">
         <h1>Qui sommes nous?</h1>
         <div id="personneImpair">
-            <div id="infoPersonne">
-                <img src="images/killian.jpg" id="pdp" alt="photo Killian">
-                <h5>Killian</h5>
-            </div>
-            <p>
-                Bonjour ! Une nouvelle année et un nouveau projet, je m’appelle Killian PEGUY. 
-                Organisé et pointilleux sur les détails, j'ai pour 
-                mission de motiver mon équipe afin d'être toujours performant et de mener à bien ce projet !
-            </p>
-        </div>
-        <div id="personnePair">
-            <p>
-                Hello, je suis Pierre STASSINET. Le rugbyman et 
-                le comptable du groupe. Bref, énergique et responsable, 
-                je serai en charge de gérer notre trésorerie et nos comptes.
-            </p>
-            <div id="infoPersonne">
+            <div id="infoPersonne"  class="reveal-left">
                 <img src="images/pierre.jpg" id="pdp" alt="photo Pierre">
                 <h5>Pierre</h5>
             </div>
-        </div>
-        <div id="personneImpair">
-            <div id="infoPersonne">
-                <img src="images/Timothée.png" id="pdp" alt="photo Timothée">
-                <h5>Timothée</h5>
-            </div>
-            <p>
-                Salut, je m'appelle Timothée HEUDE. Passionné par le football et 
-                le PSG je suis déterminé à l'idée de rendre service aux plus démunis.
-                Merci pour votre aide et votre soutien !
+            <p class="reveal-right">
+                Une nouvelle année et un nouveau projet, je m’appelle Pierre STASSINET. 
+                Organisé et pointilleux sur les détails, j'ai pour mission de motiver mon équipe afin d'être 
+                toujours performant et de mener à bien ce projet !
             </p>
         </div>
         <div id="personnePair">
-            <p>
+            <p class="reveal-left">
                 Salut a tous ! Moi, c'est Jessy NORTE, on me surnomme Le Ronaldinho de cette équipe.
                 La légende dit que j'ai le même pied droit. Il m'est impossible 
                 de manquer un seul match. Je suis très motivé à l'idée de mener ce projet 
                 à bien, j'espère que vous pourrez nous apporter votre aide !
             </p>
-            <div id="infoPersonne">
+            <div id="infoPersonne" class="reveal-right">
                 <img src="images/jessy.jpg" id="pdp" alt="photo Jessy">
                 <h5>Jessy</h5>
             </div>
         </div>
+        <div id="personneImpair">
+            <div id="infoPersonne" class="reveal-left">
+                <img src="images/alexis.jpg" id="pdp" alt="photo Alexis">
+                <h5>Alexis</h5>
+            </div>
+            <p class="reveal-right">
+                Salut, Alexis PERSEILLE. Le Papy du groupe mais le plus sage. Posé, réfléchi, je m'occupe de la trésorerie du groupe.
+            </p>
+        </div>
+        <div id="personnePair">
+            <p class="reveal-left">
+                Moi c’est Marta SOUSA DA COSTA. Comme vous pouvez le voir je suis la seule fille du groupe. 
+                J'ai pour but de promouvoir notre projet ! Pour cela, je serai chargé de gérer au mieux la 
+                communication à travers nos réseaux.
+            </p>
+            <div id="infoPersonne" class="reveal-right">
+                <img src="images/marta.jpg" id="pdp" alt="photo Marta">
+                <h5>Marta</h5>
+            </div>
+        </div>
+        <div id="personneImpair">
+            <div id="infoPersonne"  class="reveal-left">
+                <img src="images/axel.jpg" id="pdp" alt="photo Axel">
+                <h5>Axel</h5>
+            </div>
+            <p class="reveal-right">
+                Bonjour, moi c’est Axel HUBERT. Le rigolo du groupe. Un peu joueur et surtout bosseur, 
+                je m’occupe moi aussi de la trésorerie du groupe avec mon papy préféré Alexis. Par la même occasion, 
+                je suis chargé des achats d'1 Repas 1 Sourire.
+            </p>
+        </div>
         <hr width="100%" color="#FF914D" class="hr">
         <div id="nousSoutenir">
-            <h1>Soutenez-nous, aidez les!</h1>
-            <p class="border border-dark rounded-pill shadow p-3 mb-5 bg-white rounded">
+            <h1 class="reveal-top">Soutenez-nous, aidez les!</h1>
+            <p class="border border-dark rounded-pill shadow p-3 mb-5 bg-white rounded reveal">
                <strong>Chaque don compte et a le pouvoir d’aider !</strong><br>
                 Outre les dons, le simple fait de partager cette initiative peut nous aider à augmenter considérablement notre visibilité !
                 <br><br>
                 Je pense que vous avez maintenant toutes les cartes en mains, à vous de jouer !
             </p>
-            <a href="https://www.kisskissbankbank.com/fr/projects/1repas1sourire" target="blank" class="btn btn-outline-danger btn-soutenir">Nous soutenir!</a>
+            <a href="https://www.kisskissbankbank.com/fr/projects/1repas1sourire" target="blank" class="btn btn-outline-danger btn-soutenir reveal-bottom">Nous soutenir!</a>
         </div>
     </div>
     <footer>
-        <div id="realisationProjet">
+        <div id="realisationProjet" class="reveal">
             <h6>projet réalisé par:</h6>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item list-group-item-dark">Killian PEGUY</li>
-                <li class="list-group-item list-group-item-dark">Jessy NORTE</li>
-                <li class="list-group-item list-group-item-dark">Timothée HEUDE</li>
                 <li class="list-group-item list-group-item-dark">Pierre STASSINET</li>
+                <li class="list-group-item list-group-item-dark">Jessy NORTE</li>
+                <li class="list-group-item list-group-item-dark">Alexis PERSEILLE</li>
+                <li class="list-group-item list-group-item-dark">Marta SOUSA DA COSTA</li>
+                <li class="list-group-item list-group-item-dark">Axel HUBERT</li>
               </ul>
         </div>
-        <div id="reseauxSociaux">
+        <div id="reseauxSociaux" class="reveal">
             <h6>Rejoignez-nous sur les réseaux!</h6>
             <div id="iconeReseaux">
                 <a href="https://www.instagram.com/1repas.1sourire/" target="blank"><img class="icone" src="images/instagram.png"></a>
@@ -181,11 +192,12 @@
             </div>
             <p>1repas.1sourire</p>
         </div>
-        <div id="realisationSite">
+        <div id="realisationSite" class="reveal">
             <h6>Site web réalisé par:</h6>
             <a href="https://tonnerre-ewen.netlify.app/" target="blank">Ewen Tonnerre</a>
-            <p>&copy;CopyRight - Tonnerre Ewen - 2021</p>
+            <p>&copy;CopyRight - Tonnerre Ewen - 2022</p>
         </div>
     </footer>
 </body>
+<script src="sr.js"></script>
 </html>

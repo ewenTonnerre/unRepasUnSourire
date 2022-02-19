@@ -6,11 +6,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Un repas Un sourire</title>
 </head>
 <body>
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#accueil">Un repas Un sourire</a>
+        <a class="navbar-brand" href="index.html">Un repas Un sourire</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,8 +36,8 @@
       <h1>Les maraudes</h1>
     </div>
     <div id="contenuMaraude">
-      <h1>La réalité du terrain...</h1>
-      <div id="imgTextMaraude">
+      <h1 class="reveal-top">La réalité du terrain...</h1>
+      <div id="imgTextMaraude" class="long-reveal-left">
         <img src="images/imageMaraude1.jpg" alt="photo maraude">
         <p>
           L'équipe 1 Repas 1 Sourire a participé ce Jeudi 28 Janvier à 
@@ -46,7 +47,7 @@
           bien notre projet.
         </p>
       </div>
-      <div id="imgTextMaraude">
+      <div id="imgTextMaraude" class="long-reveal-right">
         <p>
           Au cours de cette maraude, 250 repas chauds ont été distribués, 
           comprenant des pâtes aux olives accompagnées d'agneau, d'une compote, 
@@ -58,28 +59,28 @@
         </p>
         <img src="images/imgMaraude2.jpg" alt="photo maraude">
       </div>
-      <p>
+      <p class="reveal-bottom">
         Pour distribuer ces 250 repas, 28 bénévoles étaient présent, 
         dont l'équipe 1 Repas 1 Sourire. Nous étions divisés en 6 équipes, 
         pour pouvoir toucher différents secteurs : Montparnasse, 
         St Lazare, Bastille, Bercy, Gare de Lyon et Austerlitz.
       </p>
-      <h1>Notre 2ème maraude</h1>
+      <h1 class="reveal-top">Notre 2ème maraude</h1>
       <div id="imgTextMaraude">
-        <p>
+        <p class="reveal-left">
           L'équipe 1 Repas 1 Sourire a également participé ce Jeudi 
           4 février à une deuxième maraude organisée par le Collectif Ultras 
           Paris Solidarité. Lors  cette maraude, nous avons distribués 
           des repas aux sans-abris parisiens.
         </p>
-        <img src="images/imgMaraude2_1.jpg" alt="photo maraude">
+        <img src="images/imgMaraude2_1.jpg" alt="photo maraude" class="reveal-right">
       </div>
       <div id="imgTextMaraude">
         <div id ="imgTextMaraudeImgs">
-          <img src="images/imgMaraude2_2.jpg" alt="photo maraude">
-          <img src="images/imgMaraude2_3.jpg" alt="photo maraude">
+          <img src="images/imgMaraude2_2.jpg" alt="photo maraude" class="reveal-top">
+          <img src="images/imgMaraude2_3.jpg" alt="photo maraude" class="reveal-bottom">
         </div>
-        <p>
+        <p class="reveal-right">
           Au cours de cette maraude, 250 repas chauds ont été distribués, 
           comprenant des pâtes accompagnées de boulettes de viande, de 
           fruits (Bananes, mandarines), d'une madeleine et ceci avec une 
@@ -94,7 +95,7 @@
           de leur apporter un côté social.
         </p>
       </div>
-      <p>
+      <p class="reveal">
         Pour distribuer ces 250 repas, 30 bénévoles étaient présents, 
         dont l'équipe 1 Repas 1 Sourire. Nous étions divisés en 6 équipes. 
         L'équipe de Jessy et Killian sont intervenus dans le secteur 
@@ -104,8 +105,8 @@
       </p>
       <hr width="100%" color="#FF914D" class="hr">
       <div id="ressentiMaraude">
-        <h1>Notre ressenti</h1>
-        <p>
+        <h1 class="reveal-top">Notre ressenti</h1>
+        <p class="reveal">
           Au cours de cette maraude avec le CUP Solidarité, nous avons été 
           particulièrement marqués par les conditions dans lesquelles vivent 
           les SDF. En effet, ils vivent dans la peur de se faire agresser, 
@@ -132,7 +133,7 @@
       </div>
     </div>
     <footer>
-        <div id="realisationProjet">
+        <div id="realisationProjet" class="reveal">
             <h6>projet réalisé par:</h6>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item list-group-item-dark">Killian PEGUY</li>
@@ -141,7 +142,7 @@
                 <li class="list-group-item list-group-item-dark">Pierre STASSINET</li>
               </ul>
         </div>
-        <div id="reseauxSociaux">
+        <div id="reseauxSociaux" class="reveal">
             <h6>Rejoignez-nous sur les réseaux!</h6>
             <div id="iconeReseaux">
                 <a href="https://www.instagram.com/1repas.1sourire/" target="blank"><img class="icone" src="images/instagram.png"></a>
@@ -149,11 +150,12 @@
             </div>
             <p>1repas.1sourire</p>
         </div>
-        <div id="realisationSite">
+        <div id="realisationSite" class="reveal">
             <h6>Site web réalisé par:</h6>
             <a href="https://tonnerre-ewen.netlify.app/" target="blank">Ewen Tonnerre</a>
             <p>&copy;CopyRight - Tonnerre Ewen - 2021</p>
         </div>
     </footer>
 </body>
+<script src="sr.js"></script>
 </html>

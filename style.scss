@@ -12,9 +12,13 @@ html, body{
     padding-right: 15px;
 
     .navbar-brand{
-        color:#DD3C34;
+        background: linear-gradient(120deg,#165888 0%,#DD3C34 100%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         margin-left: 20px;
         font-size: 1.5em;
+        font-weight: bold;
     }
 
     .nav-item{
